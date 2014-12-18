@@ -2,14 +2,15 @@
 #include "TextBox.h"
 
 
-View::View()
-{
-}
-
-
-View::~View()
-{
-}
+//View::View()
+//{
+//	
+//}
+//
+//
+//View::~View()
+//{
+//}
 
 
 

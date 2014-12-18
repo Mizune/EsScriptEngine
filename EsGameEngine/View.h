@@ -4,10 +4,10 @@
 class View
 {
 public:
-	View();
-	~View();
+	/*View();
+	~View();*/
 	TextBox charName;
-	TextBox contentsLine1,contentsLine2,contentsLine2;
+	//TextBox contentsLine1,contentsLine2,contentsLine2;
 	TextBox notificationView;
 
 	ImageView charSnap;

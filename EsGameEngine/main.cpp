@@ -32,6 +32,22 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		}
 		ScreenFlip();
 	}*/
+	
+	int i, j, w, h, r, g, b, a;
+	
+	int handle = LoadSoftImage("bg.jpg");
+	GetSoftImageSize(handle, &w,&h);
+
+	for (i = 0; i < h; i++)
+	{
+		for (j = 0; j < w; j++)
+		{
+			GetPixelSoftImage(handle, j, i, &r,&g, &b, &a);
+			DrawBox(j * 3, i * 3, j * 3 + 3, i * 3 + 3,GetColor(r,g,b),TRUE);
+		}
+	}
+	DeleteSoftImage(handle);
+
 
 	int Cr = GetColor(200,200,200);
 

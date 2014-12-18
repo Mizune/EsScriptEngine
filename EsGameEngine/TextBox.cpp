@@ -8,11 +8,6 @@ TextBox::TextBox(int x, int y)
 }
 
 
-TextBox::~TextBox()
-{
-
-}
-
 int initBox(int x, int y)
 {
 	TextBox(x, y);

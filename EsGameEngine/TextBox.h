@@ -6,7 +6,6 @@ public:
 	int Y;
 	char *TextValue;
 	TextBox(int x, int y);
-	~TextBox();
 	int initBox(int x, int y);
 	int ChangeText(char *text);
 };
