@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\image">
-      <UniqueIdentifier>{09b2d834-73c8-4dfe-b7c7-24b34b5e4d37}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -74,7 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="D:\Download files\bg.jpg">
-      <Filter>ソース ファイル</Filter>
+      <Filter>リソース ファイル</Filter>
     </Image>
   </ItemGroup>
 </Project>
