@@ -91,7 +91,8 @@
     <ClInclude Include="View.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="D:\Download files\bg.jpg" />
+    <Image Include="..\..\..\Download files\bg.jpg" />
+    <Image Include="..\..\..\Download files\bg.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

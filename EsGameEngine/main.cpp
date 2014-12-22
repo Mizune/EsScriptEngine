@@ -1,4 +1,6 @@
 #include "DxLib.h"
+#include "Config.h"
+#include "Const.h"
 
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
@@ -32,23 +34,15 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		}
 		ScreenFlip();
 	}*/
-	
-	int i, j, w, h, r, g, b, a;
-	
-	int handle = LoadSoftImage("bg.jpg");
-	GetSoftImageSize(handle, &w,&h);
-
-	for (i = 0; i < h; i++)
-	{
-		for (j = 0; j < w; j++)
-		{
-			GetPixelSoftImage(handle, j, i, &r,&g, &b, &a);
-			DrawBox(j * 3, i * 3, j * 3 + 3, i * 3 + 3,GetColor(r,g,b),TRUE);
-		}
-	}
-	DeleteSoftImage(handle);
+	//int Width = DEFAULT_SCREEN_WIDTH;
 
 
+	int Handle;     // データハンドル格納用変数
+	Handle = LoadGraph("image/bg.png"); // 画像をロード
+	DrawGraph(0, 0, Handle, TRUE); // データハンドルを使って画像を描画
+		
+
+	WaitKey();
 	int Cr = GetColor(200,200,200);
 
 	DrawString(SCREEN_WIDTH / 5 , SCREEN_HEIGHT / 5 * 4, "HogeHoge", Cr);
