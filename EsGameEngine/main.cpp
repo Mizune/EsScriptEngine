@@ -1,6 +1,9 @@
 #include "DxLib.h"
 #include "Config.h"
 #include "Const.h"
+#include "View.h"
+#include "TextBox.h"
+#include "ImageView.h"
 
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
@@ -37,10 +40,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	//int Width = DEFAULT_SCREEN_WIDTH;
 
 
-	int Handle;     // データハンドル格納用変数
-	Handle = LoadGraph("image/bg.png"); // 画像をロード
-	DrawGraph(0, 0, Handle, TRUE); // データハンドルを使って画像を描画
-		
+	//int Handle;     // データハンドル格納用変数
+	//Handle = LoadGraph("image/bg.png"); // 画像をロード
+	//DrawGraph(0, 0, Handle, TRUE); // データハンドルを使って画像を描画
+	
+	
+	View mainView = View::View();
+	
 
 	WaitKey();
 	int Cr = GetColor(200,200,200);

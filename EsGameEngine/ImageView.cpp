@@ -1,7 +1,11 @@
 #include "ImageView.h"
+#include <string>
 
 
-ImageView::ImageView(int x,int y,char* name)
+using namespace std;
+
+
+ImageView::ImageView(int x,int y,string name)
 {
 	X = x;
 	Y = y;

@@ -14,7 +14,7 @@ int initBox(int x, int y)
 	return 0;
 }
 
-int ChangeText(char *text)
+int ChangeText(string text)
 {
 	//TextValue = text;
 	return 0;

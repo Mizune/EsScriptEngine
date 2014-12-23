@@ -90,10 +90,6 @@
     <ClInclude Include="TextBox.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\Download files\bg.jpg" />
-    <Image Include="..\..\..\Download files\bg.png" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
