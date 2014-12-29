@@ -1,36 +1,32 @@
 #include "View.h"
-#include "TextBox.h"
 #include "DxLib.h"
 #include "Const.h"
 #include <string>
 
-
-View::View(){
-	drawBackground();
-}
-
-
-
+//
+//View::View(){
+//
+//}
 // ContentTextView,NameView‚Ì“ñ‚Â‚ÌˆÊ’uî•ñ‚ğ‚Á‚Ä‚é
 using namespace std;
 
-int drawTextContents(int x, int y, char* text){
+int View::drawTextContents(int x, int y, char* text){
 	return 0;
 }
 
-int drawTextContents(TextBox value){
+int View::drawTextBox(TextBox value){
 	return 0;
 }
 
-int drawNameText(int x, int y, char* name){
+int View::drawText(int x, int y, string content){
 	return 0;
 }
 
-int drawNameText(TextBox value){
+int View::drawNameTextBox(TextBox value){
 	return 0;
 }
 
-int drawBackground()
+int View::drawBackground()
 {
 	string fileName ="image/bg.png";
 	int Handle = LoadGraph(fileName.c_str());
@@ -38,14 +34,15 @@ int drawBackground()
 	return 0;
 }
 
-int drawBackground(ImageView img)
+int View::drawBackground(ImageView img)
 {	
 	string fileName ="image/"+ img.ImgFileName;
 	
-int Handle = LoadGraph(fileName.c_str);
+	int Handle = LoadGraph(fileName.c_str());
 	DrawGraph(0, 0, Handle, TRUE); 
+	return 0;
 }
-int drawBackgroundWithAnim(ImageView img, int animcode){
+int View::drawBackgroundWithAnim(ImageView img, int animcode){
 
 	switch (animcode)
 	{
@@ -58,11 +55,11 @@ int drawBackgroundWithAnim(ImageView img, int animcode){
 
 	return 0;
 }
-int changeCharacter(ImageView character){
+int View::changeCharacter(ImageView character){
 
 	return 0;
 }
-int changeBackground(ImageView img){
+int View::changeBackground(ImageView img){
 	
 	return 0;
 }

@@ -8,14 +8,14 @@ TextBox::TextBox(int x, int y)
 }
 
 
-int initBox(int x, int y)
+int TextBox::initBox(int x, int y)
 {
 	TextBox(x, y);
 	return 0;
 }
 
-int ChangeText(string text)
+int TextBox::ChangeText(string text)
 {
-	//TextValue = text;
+	TextBox::textValue = text;
 	return 0;
 }

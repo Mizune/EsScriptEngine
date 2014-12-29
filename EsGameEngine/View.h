@@ -6,7 +6,7 @@ class View
 public:
 	View();
 	TextBox charName;
-	TextBox contentsLine1,contentsLine2,contentsLine2;
+	TextBox contentsLine1,contentsLine2,contentsLine3;
 	TextBox notificationView;
 
 	ImageView charSnap;
@@ -21,5 +21,8 @@ public:
 	int drawBackgroundWithAnim(ImageView img, int animcode);
 	int changeCharacter(ImageView character);
 	int changeBackground(ImageView img);
+	int drawTextBox(TextBox img);
+	int drawText(int x, int y, string content);
+	int drawNameTextBox(TextBox value);
 };
 
